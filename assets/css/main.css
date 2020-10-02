@@ -1,0 +1,463 @@
+/* Common CSS */
+
+@import url('https://fonts.googleapis.com/CSS2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #333;
+	background: #ffffff url("../img/bg.png") repeat right top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.h-100 {
+	min-height: 100%;
+}
+
+.bg {
+	background-size: cover;
+	background-position: center;
+	transition: .3s;
+	position: relative;
+}
+
+.bg:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #333;
+	opacity: .2;
+}
+
+.pt-100 {
+	padding-top: 100px
+}
+
+.pb-100 {
+	padding-bottom: 100px
+}
+
+.mb-100 {
+	margin-bottom: 100px
+}
+
+a {
+	text-decoration: none;
+	transition: .3s;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.fixed-menu {
+	width: 15%;
+	background: #fff;
+	height: 100%;
+	float: left;
+	position: fixed;
+	box-shadow: -3px 1px 11px 5px rgba(0,0,0,0.25);
+    z-index: 999;
+}
+
+.main-content {
+	width: 85%;
+	float: right;
+}
+
+.menu-top {
+	background: #fafafa;
+	border-bottom: 5px solid #f3f3f3;
+}
+
+.identity {
+	padding: 40px 0;
+}
+
+.identity h2 {
+	text-transform: capitalize;
+	color: #008073;
+	font-size: 40px;
+	text-align: center;
+	line-height: 40px;
+	text-shadow: 10px 5px 7px green;
+	font-style: italic;
+}
+
+.identity span {
+	font-style: italic;
+	text-align: center;
+	display: block;
+}
+
+.main-menu {}
+
+.main-menu ul {}
+
+.main-menu ul li {
+	/* margin-bottom: 10px; */
+	padding: 10px;
+	transition: all .3s;
+}
+
+.main-menu ul li:hover {
+	background: #fafafa;
+	border-left: 5px solid #008073;
+}
+
+.main-menu ul li.current a {
+	color: red;
+}
+
+.main-menu ul li a {
+	color: #333;
+	text-transform: capitalize;
+	padding: 15px 10px;
+}
+
+.main-menu ul li a i {
+	margin-right: 10px;
+	width: 20px;
+}
+
+.main-menu ul li a i.home {
+	color: green;
+}
+
+.main-menu ul li a i.portfolio {
+	color: #F44336;
+}
+
+.main-menu ul li a i.about {
+	color: #2F8D80;
+}
+
+.main-menu ul li a i.services {
+	color: #01BCD4;
+}
+
+.main-menu ul li a i.portfolio {
+	color: #F44336;
+}
+
+.main-menu ul li a i.team {
+	color: #3F51B5;
+}
+
+.main-menu ul li a i.testimonial {
+	color: #FF9800;
+}
+
+.main-menu ul li a i.blog {
+	color: #FBC031;
+}
+
+.main-menu ul li a i.contact {
+	color: #795548;
+}
+
+.menu-bottom {}
+
+.home-area {
+	color: #fff;
+}
+
+.home-slogan {
+	margin: 40px 0 40px 20px;
+}
+
+.home-slogan h3 {
+	line-height: 1.5em;
+	font-size: 40px;
+	transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+}
+
+.txt-bg {
+	background: #008073;
+	padding: 0 10px;
+}
+
+.txt-u-line {
+	border-bottom: 3px solid #008073;
+}
+
+.about-area {
+	color: #333;
+}
+
+.area-title {
+	background: #008073;
+	padding: 30px;
+}
+
+.area-title h2 {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.area-slogan {
+	margin: 40px 0 40px 20px;
+}
+
+.area-slogan h3 {
+	padding-left: 30px;
+	line-height: 1.5em;
+	color: #795548;
+	border-left: 5px solid #795548;
+}
+
+.area-content {
+	margin-left: 20px;
+}
+
+.area-content p {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+
+/*Services Area CSS*/
+
+.services-area {
+	margin-bottom: 50px;
+}
+
+.single-service {
+	padding: 20px;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.single-service i {
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: orange;
+}
+
+.single-service h4 {
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 20px 0;
+}
+
+.single-service p {
+	font-size: 18px;
+	padding: 5%;
+}
+
+
+/*portfolio area css*/
+
+.single-portfolio {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+
+/* portfolio overley start */
+
+.portfolio-overley {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	transition: .3s;
+}
+
+.portfolio-overley:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	opacity: .8;
+}
+
+.single-portfolio img {
+	max-height: 310px;
+	width: 100%;
+}
+
+.portfolio-content {
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+
+.portfolio-content i {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.portfolio-content h4 {
+	font-size: 22px;
+	text-transform: capitalize;
+}
+
+.portfolio-content h4 span {
+	display: block;
+	font-style: italic;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.single-portfolio:hover .portfolio-overley {
+	transform: scale(1);
+}
+
+.single-portfolio a {
+	color: #fff;
+}
+
+
+/* portfolio overley end */
+
+
+/* portfolio filtering */
+
+.filtering {
+	margin-top: 90px;
+	margin-bottom: 90px;
+	text-align: center;
+}
+
+.isotope-filtering button {
+	background: none;
+	border: none;
+	text-transform: capitalize;
+	font-size: 20px;
+	padding: 0px 10px;
+	transition: .3s;
+}
+
+.isotope-filtering button:hover {
+	color: orange;
+}
+
+
+/* portfolio filtering end*/
+
+
+/* contact area css */
+
+.contact-area p {
+	text-align: center;
+	padding: 0 20%;
+	margin-top: 50px;
+}
+
+.contact-info span {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+}
+
+.social-links {
+	margin: 45px 0;
+}
+
+.social-links ul {
+	text-align: center;
+}
+
+.social-links ul li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.social-links ul li a {
+	color: #000;
+	font-size: 25px;
+}
+
+.contact-form {
+	padding: 0 20% 100px 20%;
+}
+
+.contact-form form {
+	width: 100%;
+	position: relative;
+}
+
+.contact-form input[type="text"] {
+	border: none;
+	width: 46%;
+	border-bottom: 1px solid #ddd;
+	padding: 3px 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: none;
+}
+
+.contact-form textarea {
+	border: none;
+	padding: 3px 10px;
+	border-bottom: 1px solid #ddd;
+	width: 96%;
+	background: none;
+}
+
+.contact-form input[type="submit"] {
+	color: #fff;
+	background: #000;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	border: none;
+	left: 50%;
+	bottom: -100px;
+	transform: translateX(-50%);
+}
+
+
+/* footer area css */
+
+.footer-area {
+	background: #000;
+	color: #fff;
+}
+
+.footer-area .social-links {
+	margin-bottom: 30px;
+}
+
+.footer-area .social-links ul li a {
+	color: #fff;
+}
+
+.footer-area p {
+	text-align: center;
+}
